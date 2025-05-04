@@ -1,11 +1,19 @@
-/* 
-
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
-
-*/
+body{
+    background-image: url("https://i.pinimg.com/736x/52/83/2a/52832ae6bcca2d6dc4248fbb2e774254.jpg");
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+h1{
+    background-color: rgba(146, 164, 122, 0.963);
+    color: rgb(255, 252, 243);
+}
+.form-control{
+    background-color: rgb(202, 187, 148) !important; 
+    border-color: rgb(169, 156, 123) !important;
+}
+::placeholder{
+    color: rgb(88, 87, 81) !important;
+}
+li{
+    background-color: rgb(229, 218, 189) !important; 
+    border-color: rgb(216, 203, 169) !important;
+}
