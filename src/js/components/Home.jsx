@@ -27,18 +27,23 @@ const Home = () => {
 				value={inputValue}
 			/>
 			<ul className="list-group mx-5 px-5 my-3">
-				{toDo.map((item, index) => (
-					<li key={index} className="list-group-item d-flex justify-content-center">
-						<span className="flex-grow-1">{item}</span>
-
-						<button
-							className="btn btn-danger btn-sm"
-							onClick={() => Delete(index)} // Llama a la función para eliminar
-						>
-							X
-						</button>
+				{toDo.length === 0 ? (
+					<li className="list-group-item d-flex justify-content-center">
+						<span className="flex-grow-1">Añade un nuevo To Do :D</span>
 					</li>
-				))}
+				) : (
+					toDo.map((item, index) => (
+						<li key={index} className="list-group-item d-flex justify-content-center">
+							<span className="flex-grow-1">{item}</span>
+							<button
+								className="btn btn-danger btn-sm"
+							onClick={() => Delete(index)} >
+							
+								X
+							</button>
+						</li>
+					))
+				)}
 			</ul>
 		</div>
 	);

@@ -17,3 +17,10 @@ li{
     background-color: rgb(229, 218, 189) !important; 
     border-color: rgb(216, 203, 169) !important;
 }
+.list-group-item button {
+    display: none;
+}
+
+.list-group-item:hover button {
+    display: inline-block;
+}
