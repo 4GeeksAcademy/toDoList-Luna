@@ -14,7 +14,7 @@ h1{
     color: rgb(88, 87, 81) !important;
 }
 li{
-    background-color: rgb(229, 218, 189) !important; 
+    background-color: rgba(229, 218, 189, 0.948) !important; 
     border-color: rgb(216, 203, 169) !important;
 }
 .list-group-item button {
@@ -23,4 +23,20 @@ li{
 
 .list-group-item:hover button {
     display: inline-block;
+}
+#done{
+    background-color: rgba(148, 132, 91, 0.955) !important;
+    color: rgb(255, 252, 243) !important;
+}
+.btn-danger{
+    background-color: rgba(193, 73, 33, 0.792) !important;
+    border-color: rgba(148, 132, 91, 0) !important;
+}
+.btn-warning{
+    background-color: rgba(198, 180, 134, 0.607) !important;
+    border-color: rgba(148, 132, 91, 0) !important;
+}
+
+#btn-done{
+    color:rgb(255, 255, 255) !important;
 }
