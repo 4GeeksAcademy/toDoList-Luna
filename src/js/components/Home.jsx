@@ -21,7 +21,21 @@ const Home = () => {
 			})
 			.catch((error) => alert(error.message));
 	}
-	useEffect(() => { getToDos() }, [])
+	function createUser() {
+    fetch("https://playground.4geeks.com/todo/users/lunab28", {
+        method: "POST",
+        body: JSON.stringify({ username: "lunab28" }),
+        headers: {
+            "Content-Type": "application/json"
+        }
+    })
+    .then((response) => response.json())
+    .then((data) => {
+        getToDos() 
+    })
+    .catch((error) => alert(error.message));
+}
+	useEffect(() => {createUser()}, [])
 	function addToDo() {
 		let bodyData = {
 			"label": inputValue,
